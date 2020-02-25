@@ -11,8 +11,22 @@ namespace Fegyverarzenal
         enum fegyverek {gránát , uzi , m4 , ak47};
         static void Main(string[] args)
         {
-            fegyverek kezemben = fegyverek.m4;
-            List<fegyverek> fegyvertár = new List<fegyverek>();
+            //fegyverek kezemben = fegyverek.m4;
+            //List<fegyverek> fegyvertár = new List<fegyverek>();
+            //fegyvertár.Add(fegyverek.uzi);
+            //fegyvertár.Add(fegyverek.ak47);
+            //foreach (fegyverek item in fegyvertár)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //fegyvertár.Remove(fegyverek.uzi);
+            //fegyvertár.Insert(0, fegyverek.gránát);
+            //foreach (fegyverek item in fegyvertár)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            HashSet<fegyverek> fegyvertár = new HashSet<fegyverek>();   // halmaz
             fegyvertár.Add(fegyverek.uzi);
             fegyvertár.Add(fegyverek.ak47);
             foreach (fegyverek item in fegyvertár)
